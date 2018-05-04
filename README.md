@@ -2,7 +2,13 @@
 
 ## 概要
 
-Chatworkの拡張機能であるChatworkExtension（ https://github.com/mayuki/ChatworkExtension ）の追加設定を書いていく
+自分流、チャットワーク術をまとめておきたいと思います。
+
+今回紹介するカスタマイズを行うことで、よりスマートにより早く部屋の移動、文字の入力をすることができるようになり、仕事の効率がものすごく上がるはずです。
+
+Chatworkの拡張機能であるChatworkExtension（ https://github.com/mayuki/ChatworkExtension ）の追加設定を書いていくことで実現している。
+そのため、そのChatworkExtensionをインストールを前提としている。
+
 
 ## 導入の仕方
 
@@ -12,6 +18,8 @@ Chatworkの拡張機能であるChatworkExtension（ https://github.com/mayuki/C
 1. Chatworkを開き直す（リロード）
 
 ## 機能　（編集中）
+
+このスクリプトを導入することで、以下のような機能が使えるようになります。
 
 ### TO圧縮機能　+ ショートカットキー追加
 
