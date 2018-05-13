@@ -1,7 +1,8 @@
 /**
- * TO圧縮ボタンの設置
+ * カスタムボタンを設置する
  */
-var addToAsshuku = function(){
+var addMyButton = function(){
+	//  TO圧縮ボタンの設置
 	var span = document.createElement('span');
 	span.textContent = 'TO圧縮';
 	span.className='to-asshuku button';
@@ -101,7 +102,7 @@ document.onkeydown = function (e){
  */
 var waitLoading = function() {
 	if (document.getElementById('_chatText')) {
-		addToAsshuku();
+		addMyButton();
 	} else {
 		setTimeout(waitLoading,200)
 	}
