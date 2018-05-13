@@ -14,7 +14,7 @@ Chatworkの拡張機能であるChatworkExtension（ https://github.com/mayuki/C
 
 1. ChatworkExtensionのオプションを開く
 1. 「高度な設定」を「表示する」
-1. 「InjectUserCustomScripts」に[InjectUserCustomScripts.js](./InjectUserCustomScripts.js)のスクリプトを貼り付ける
+1. 「InjectUserCustomScripts」に[InjectUserCustomScripts.js](./InjectUserCustomScripts.js)のスクリプトの中身を貼り付ける
 1. Chatworkを開き直す（リロード）
 
 ## 機能　（編集中）
