@@ -1,7 +1,7 @@
 /**
  * TO圧縮ボタンの設置
  */
-setTimeout(function()  {
+var addToAsshuku = function(){
 	var span = document.createElement('span');
 	span.textContent = 'TO圧縮';
 	span.className='to-asshuku button';
@@ -19,7 +19,7 @@ setTimeout(function()  {
 	span.onclick = selectedText2InfoText;
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
-}, 1000)
+}
 
 /**
  * 1行目タイトル、2行目移行内容に変換する
@@ -95,3 +95,15 @@ document.onkeydown = function (e){
 		document.getElementsByClassName('roomListHeader')[1].children[0].blur();
 	}
 };
+
+/**
+ * 読み込みが完了するまで待機する
+ */
+var waitLoading = function() {
+	if (document.getElementById('_chatText')) {
+		addToAsshuku();
+	} else {
+		setTimeout(waitLoading,200)
+	}
+}
+waitLoading();
