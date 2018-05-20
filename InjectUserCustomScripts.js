@@ -20,6 +20,12 @@ var addMyButton = function(){
 	span.onclick = selectedText2InfoText;
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
+
+	// グループ絞り込みにショートカットキーを表示させる
+	setTimeout(function() {
+		var searchTag = document.getElementsByClassName('roomListHeader')[1].childNodes[0]
+		searchTag.setAttribute('placeholder', searchTag.getAttribute('placeholder')+'(ctrl+i)')
+	},1000)
 }
 
 /**
