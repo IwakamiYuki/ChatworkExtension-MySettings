@@ -21,10 +21,16 @@ var addMyButton = function(){
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
 
-	// グループ絞り込みにショートカットキーを表示させる
+	
 	setTimeout(function() {
+		// グループ絞り込みにショートカットキーを表示させる
 		var searchTag = document.getElementsByClassName('roomListHeader')[1].childNodes[0]
-		searchTag.setAttribute('placeholder', searchTag.getAttribute('placeholder')+'(ctrl+i)')
+		searchTag.setAttribute('placeholder', searchTag.getAttribute('placeholder')+'（ctrl+i）')
+
+		// 検索窓のフォーカスを離れたときの処理
+		document.getElementsByClassName('roomListHeader')[1].childNodes[0].addEventListener("blur", function( event ) {
+			isSearching = false;
+		}, true);
 	},1000)
 }
 
@@ -103,6 +109,8 @@ document.onkeydown = function (e){
 	}
 };
 
+
+
 /**
  * 読み込みが完了するまで待機する
  */
@@ -113,4 +121,5 @@ var waitLoading = function() {
 		setTimeout(waitLoading,200)
 	}
 }
+
 waitLoading();
