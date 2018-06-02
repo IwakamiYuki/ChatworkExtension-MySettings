@@ -4,18 +4,22 @@
 var addMyButton = function(){
 	//  TO圧縮ボタンの設置
 	var span = document.createElement('span');
-	span.textContent = 'TO圧縮';
+	span.textContent = 'TOALL 圧縮(ctrl + ,)';
 	span.className='to-asshuku button';
 	span.onclick = function() {
 		var e = document.getElementById('_chatText')
-		e.value=e.value.replace(/(^\[To\:[0-9]+\]).+[\s\S]/gm,'$1');
+		if (e.value.length > 0) {
+			e.value=e.value.replace(/(^\[To\:[0-9]+\]).+[\s\S]/gm,'$1');
+		} else {
+			e.value='[toall]'
+		}
 	}
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
 
 	// キレイにするやつ
 	span = document.createElement('span');
-	span.textContent = '[info]';
+	span.textContent = '[info](ctrl + .)';
 	span.className='to-asshuku button';
 	span.onclick = selectedText2InfoText;
 	element = document.getElementById('_sendEnterActionArea')
