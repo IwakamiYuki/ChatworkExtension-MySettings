@@ -25,6 +25,16 @@ var addMyButton = function(){
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
 
+	///// エモーションの追加
+	// (gogo)
+	var addedEmotion = document.createElement('li').cloneNode(true)
+	addedEmotion.innerHTML = '<li class="emoticonTooltip__emoticonContainer"><img src="https://assets.chatwork.com/images/emoticon2x/emo_gogo.gif" alt="(gogo)" data-cwtag="(gogo)" title="いけいけ！" class="emoticonTooltip__emoticon"></li>'
+	document.getElementById('_emoticonGallery').appendChild(addedEmotion)
+	// (ec14)
+	addedEmotion = document.createElement('li').cloneNode(true)
+	addedEmotion.innerHTML = '<li class="emoticonTooltip__emoticonContainer"><img src="https://assets.chatwork.com/images/emoticon2x/emo_ceo.gif" alt="(ec14)" data-cwtag="(ec14)" title="EC14" class="emoticonTooltip__emoticon"></li>'
+	document.getElementById('_emoticonGallery').appendChild(addedEmotion)
+
 	
 	setTimeout(function() {
 		// グループ絞り込みにショートカットキーを表示させる
