@@ -34,7 +34,7 @@ var addMyButton = function(){
 	// (ec14)
 	addedEmotion = document.createElement('li') .cloneNode(true)
 	addedEmotion. setAttribute('class', 'emoticonTooltip__emoticonContainer')
-	addedEmotion.innerHTML = '<li class="emoticonTooltip__emoticonContainer"><img src="https://assets.chatwork.com/images/emoticon2x/emo_ceo.gif" alt="(ec14)" data-cwtag="(ec14)" title="EC14" class="emoticonTooltip__emoticon"></li>'
+	addedEmotion.innerHTML = '<img src="https://assets.chatwork.com/images/emoticon2x/emo_ceo.gif" alt="(ec14)" data-cwtag="(ec14)" title="EC14" class="emoticonTooltip__emoticon">'
 	document.getElementById('_emoticonGallery').appendChild(addedEmotion)
 
 	
