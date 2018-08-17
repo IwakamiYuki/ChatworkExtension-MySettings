@@ -1,4 +1,10 @@
+※チャットワークの拡張機能はこちらで開発を行うようにしました
+https://github.com/IwakamiYuki/chatwork-my-extensions
+
+↓以下で紹介する拡張機能は開発が停止されてしまったようです。。
+
 # ChatworkExtension-MySettings
+
 
 ## 概要
 
